@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f3f0fa;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .signup-container {
+      width: 100%;
+      max-width: 900px;
+      background: #f8f6ff;
+      padding: 40px 50px;
+      border-radius: 12px;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .row input {
+      flex: 1;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f5f0ff;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      background: #8ecbff;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #72b7f8;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+      .signup-container {
+        padding: 30px 20px;
+      }
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Register now</h2>
+    <form>
+      <div class="row">
+        <input type="text" placeholder="First Name *" required>
+        <input type="text" placeholder="Last Name *" required>
+      </div>
+      <input type="email" placeholder="Email address *" required>
+      <input type="password" placeholder="Password *" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
